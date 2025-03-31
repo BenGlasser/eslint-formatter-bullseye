@@ -1,6 +1,6 @@
 {
   "name": "eslint-formatter-bullseye",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An ESLint formatter with concise, easy to grok, output",
   "license": "MIT",
   "repository": {
