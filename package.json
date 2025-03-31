@@ -1,0 +1,65 @@
+{
+  "name": "eslint-formatter-bullseye",
+  "version": "1.0.4",
+  "description": "An ESLint formatter with concise, easy to grok, output",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benglasser/eslint-formatter-bullseye.git"
+  },
+  "author": {
+    "name": "Ben Glasser",
+    "email": "Ben@BenGlasser.com",
+    "url": "https://BenGlasser.com"
+  },
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "test": "xo && ava && tsd",
+    "lint": "xo",
+    "test:unit": "ava",
+    "lint:custom": "eslint . --format ./index.js"
+  },
+  "exports": {
+    "default": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-formatter",
+    "formatter",
+    "reporter",
+    "lint",
+    "validate"
+  ],
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "ava": "^5.3.1",
+    "strip-ansi": "^7.1.0",
+    "tsd": "^0.29.0",
+    "typescript": "^5.2.2",
+    "xo": "^0.56.0"
+  },
+  "ava": {
+    "serial": true
+  },
+  "xo": {
+    "rules": {
+      "import/no-extraneous-dependencies": "off"
+    }
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  }
+}

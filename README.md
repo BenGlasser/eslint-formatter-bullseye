@@ -1,0 +1,80 @@
+# eslint-formatter-bullseye
+
+```
+██████╗ ██╗   ██╗██╗     ██╗     ███████╗███████╗██╗   ██╗███████╗██╗
+██╔══██╗██║   ██║██║     ██║     ██╔════╝██╔════╝╚██╗ ██╔╝██╔════╝██║
+██████╔╝██║   ██║██║     ██║     ███████╗█████╗   ╚████╔╝ █████╗  ██║
+██╔══██╗██║   ██║██║     ██║     ╚════██║██╔══╝    ╚██╔╝  ██╔══╝  ╚═╝
+██████╔╝╚██████╔╝███████╗███████╗███████║███████╗   ██║   ███████╗██╗
+╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚══════╝╚══════╝   ╚═╝   ╚══════╝╚═╝
+```
+
+> A beautiful and concise ESLint formatter with clear, easy-to-read output
+
+![npm version](https://img.shields.io/npm/v/eslint-formatter-bullseye?style=for-the-badge)
+![NPM License](https://img.shields.io/npm/l/eslint-formatter-bullseye?style=for-the-badge)
+
+## Screenshot
+
+<img width="740" alt="image" src="https://github.com/user-attachments/assets/677f28ec-747d-4ca8-91ab-f8c4ef6c08c5" />
+
+## Features
+
+- 🎯 Clear, concise output format
+- 🎨 Beautiful color-coded messages
+- 📍 Unix-style line:column references
+- 🔍 Precise error location with carets
+- 📝 Grouped warnings and errors
+- 📊 Clean summary report
+
+## Install
+
+```bash
+npm install --save-dev eslint-formatter-bullseye
+# or
+yarn add -D eslint-formatter-bullseye
+```
+
+## Usage
+
+### Command Line
+
+```bash
+eslint . --format eslint-formatter-bullseye
+```
+
+### ESLint Config
+
+In your `.eslintrc`:
+
+```json
+{
+  "formatter": "eslint-formatter-bullseye"
+}
+```
+
+### Output Example
+
+```
+╔══════════════╗
+║  WARNINGS    ║
+╚══════════════╝
+🟡 index.js:22:5 | console.log('debug') | no-console
+                   ^
+
+╔══════════════╗
+║   ERRORS     ║
+╚══════════════╝
+🔴 index.js:15:3 | const unused = 'value' | no-unused-vars
+                   ^
+
+╔══════════════╗
+║   SUMMARY    ║
+╚══════════════╝
+🔴 Errors detected: 1
+🟡 Warnings identified: 1
+```
+
+## License
+
+MIT © [Ben Glasser](https://benglasser.com)
