@@ -16,7 +16,8 @@
 
 ## Screenshot
 
-<img width="740" alt="image" src="https://github.com/user-attachments/assets/677f28ec-747d-4ca8-91ab-f8c4ef6c08c5" />
+![image](https://github.com/user-attachments/assets/cff417ca-b0d3-4c5f-b727-33aae3884804)
+
 
 ## Features
 
